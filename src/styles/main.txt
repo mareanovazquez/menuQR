@@ -1,0 +1,13 @@
+Propósito: 
+Generalmente se utiliza para contener los estilos principales y globales de la aplicación. 
+Puede incluir configuraciones de estilos que se aplican en toda la aplicación.
+Como la configuración de fuentes, 
+colores, 
+diseño general, y 
+otros estilos que afectan a múltiples componentes.
+
+Contenido:
+Reset CSS o Normalize.css para asegurar consistencia entre diferentes navegadores.
+Variables CSS globales (colores, fuentes, tamaños).
+Estilos base y genéricos para elementos HTML (body, h1, p, etc.).
+Estilos de layout globales.
