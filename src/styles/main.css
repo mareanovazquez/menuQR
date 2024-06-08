@@ -1,77 +1,140 @@
 :root {
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
-    font-weight: 400;
-
-    color-scheme: light dark;
-    color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-family: "Lato", sans-serif;
+    
 }
 
-a {
-    font-weight: 500;
-    color: #646cff;
-    text-decoration: inherit;
-}
 
-a:hover {
-    color: #535bf2;
-}
-
-body {
-    margin: 0;
+.header .showMenu .navbar-mobile{
+    background-color: #FCFCFC;
     display: flex;
-    place-items: center;
-    min-width: 320px;
-    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    animation: slideInFromLeft 0.5s ease-in-out;
 }
 
-h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
+.header .showMenu .navbar-mobile a {
+    font-family: 'Roboto Slab', serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #0A2E36;
+    font-size: 30px;
+    padding-left: 10px;
 }
 
-button {
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: #1a1a1a;
+.header .showMenu .navbar-mobile .navBarRRSS {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.header .showMenu .navbar-mobile a:hover {
+    font-weight: 800;
+    transition: 0.2s;
+}
+
+.header .showMenu .navbar-mobile.navBarRRSS a {
+    text-decoration: none;
+    color: #0A2E36;
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* MENU BOTÓN TOGGLE */
+.header .toggle {
+    width: 60px;
+    height: 60px;
+    background: rgb(235, 227, 227);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    transition: border-color 0.25s;
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    overflow: hidden;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
 }
 
-button:hover {
-    border-color: #646cff;
+.header .toggle span {
+    display: inline-block;
+    position: relative;
+    width: 40px;
+    height: 4px;
+    background: #0A2E36;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+/* ANIMACIÓN TOGGLE */
+.toggle span:nth-child(1) {
+    transform: translateY(-15px);
+    width: 30px;
+    /* left: 15px; */
+}
+
+.toggle.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(1px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.toggle span:nth-child(2) {
+    /* transform: translateY(15px); */
+    width: 30px;
+    /* left: 15px; */
+}
+
+.toggle.active span:nth-child(2) {
+    width: 40px;
+    transform: translateY(-2px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+
+.toggle span:nth-child(3) {
+    transform: translateY(15px);
+    width: 30px;
+    /* left: 15px; */
+}
+
+.toggle.active span:nth-child(3) {
+    transform: translateX(70px);
+    transition: 0.5s ease-in-out;
 }
 
 
 
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
 
-    a:hover {
-        color: #747bff;
-    }
-
-    button {
-        background-color: #f9f9f9;
-    }
+/* SMALL | Entre 576px y 767px */
+/* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {
 }
 
+/* MEDIUM | Entre 768px y 991px  */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {
+}
+
+/* LARGE | Entre 992px y 1199px */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
+    /* Tus estilos para dispositivos large y superiores van aquí */
+}
+
+/* XLARGE | Desde 1200px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1200px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
+}
+
+/* XXLARGE | Desde 1400px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1400px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
+}
 

@@ -5,26 +5,45 @@ export const NavBar = () => {
 
     const { isXSmall, isSmall, isMedium, isLarge, isXLarge, isXXLarge } = useContext(VisibilityContext);
 
+    const[showMenu, setShowMenu] = useState(false)
+
+    const handleShowMenu = ()=> {
+        setShowMenu(!showMenu)
+        }
+    
     return (
         <>
 
-            {isXSmall && (
-                <div className="navbar xSmall">
-                    <h2>navbar XSmall</h2>
-                </div>
+            {(isXSmall || isSmall || isMedium) && (
+                <>
+                    <div className="header">
+                    <div className={`toggle ${showMenu ? 'active' : ''}`} onClick={handleShowMenu}>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        {showMenu &&
+                        <div className="container-navbar" id="container-navbar">
+                            <nav className="navbar-mobile">
+                                <a href="#seccionUno" className="item-mobile"> SECCIÓN UNO</a>
+                                <a href="#seccionDos" className="item-mobile">SECCIÓN DOS</a>
+                                <a href="#seccionTres" className="item-mobile">SECCIÓN TRES</a>
+                                <a href="#seccionCuatro" className="item-mobile">SECCIÓN CUATRO</a>
+                                <a href="#seccionCinco" className="item-mobile">SECCIÓN 5</a>
+                                <div className="navBarRRSS">
+                                    <a href="" className="itemMenuRRSS"><i className="fa fa-instagram"></i></a>
+                                    <a href="" className="itemMenuRRSS"><i className="fa fa-envelope"></i></a>
+                                    <a href="https://wa.me/ + número prefijo país sin signo + número de teléfono" className="itemMenuRRSS"
+                                        target="_blank"><i className="fa fa-whatsapp"></i></a>
+                                </div>
+                            </nav>
+                        </div>
+                        }
+                    </div>
+                </>
             )
-
             }
-            {isSmall && (
-                <div className="navbar small">
-                    <h2>navbar small</h2>
-                </div>
-            )}
-            {isMedium && (
-                <div className="navbar medium">
-                    <h2>navbar medium</h2>
-                </div>
-            )}
+
             {isLarge && (
                 <div className="navbar large">
                     <h2>navbar large</h2>
