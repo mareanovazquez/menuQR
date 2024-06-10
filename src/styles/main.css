@@ -1,26 +1,39 @@
 :root {
-    font-family: "Lato", sans-serif;
-    
+    --primary-font-family: "Lato", sans-serif;
+    --font-size-base: 16px;
+    --spacing-unit: 8px;
+    --primary-color: #002937;
+    --secondary-color: #009CCE;
+    --navbar-color:#FAF9F5;
+    --hover-color:#E88D67;
+    --background-color-navbar:#4682A9;
+    --background-color-body:#F6F4EB;
+
 }
 
+body {
+    background-color: var(--background-color-body);
+}
 
-.header .showMenu .navbar-mobile{
-    background-color: #FCFCFC;
+.header .showMenu .navbar-mobile {
+    background-color:var(--background-color-navbar);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 100vh;
-    width: 100%;
+    justify-content: center;
+    height: 80vh;
+    width: 80%;
+    border-radius: 5px;
     position: fixed;
     animation: slideInFromLeft 0.5s ease-in-out;
 }
 
 .header .showMenu .navbar-mobile a {
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--primary-font-family);
     text-transform: uppercase;
     text-decoration: none;
-    color: #0A2E36;
+    color: var(--navbar-color);
     font-size: 30px;
+    padding-top: 30px;
     padding-left: 10px;
 }
 
@@ -31,13 +44,13 @@
 }
 
 .header .showMenu .navbar-mobile a:hover {
-    font-weight: 800;
+    color: var(--hover-color);
     transition: 0.2s;
 }
 
 .header .showMenu .navbar-mobile.navBarRRSS a {
     text-decoration: none;
-    color: #0A2E36;
+    color: var(--navbar-color);
     font-size: 30px;
     padding-left: 20px;
     padding-right: 20px;
@@ -47,7 +60,7 @@
 .header .toggle {
     width: 60px;
     height: 60px;
-    background: rgb(235, 227, 227);
+    background: var(--background-color-navbar);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,6 +72,7 @@
     overflow: hidden;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
     border-radius: 5px;
+    z-index: 4444;
 }
 
 .header .toggle span {
@@ -66,7 +80,7 @@
     position: relative;
     width: 40px;
     height: 4px;
-    background: #0A2E36;
+    background:var(--navbar-color);
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -112,13 +126,11 @@
 
 /* SMALL | Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) {}
 
 /* MEDIUM | Entre 768px y 991px  */
 /* Bootstrap breakpoints MD y superiores */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
 /* LARGE | Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
@@ -138,3 +150,43 @@
     /* Tus estilos para dispositivos extra large y superiores van aquí */
 }
 
+/*ANIMATIONS*/
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
