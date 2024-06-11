@@ -1,15 +1,16 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { VisibilityContext } from "../../context/VisibilityContext";
+import marca from "../../assets/marca.svg";
 
 export const NavBar = () => {
 
     const { isXSmall, isSmall, isMedium, isLarge, isXLarge, isXXLarge } = useContext(VisibilityContext);
-
     const [showMenu, setShowMenu] = useState(false)
 
     const handleShowMenu = () => {
         setShowMenu(!showMenu)
     }
+
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === 'Escape' && showMenu) {
@@ -21,6 +22,31 @@ export const NavBar = () => {
             window.removeEventListener('keydown', handleKeyDown);
         };
     }, [showMenu]);
+
+    const navbarRef = useRef(null)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const navBar = navbarRef.current;
+            const seccionActiva = document.querySelector('.seccion')
+
+            if (navBar && seccionActiva) {
+                const seccionActivaRect = seccionActiva.getBoundingClientRect();
+
+                if (window.scrollY > seccionActivaRect.top) {
+                    navBar.classList.add('fixed');
+                } else {
+                    navBar.classList.remove('fixed');
+                }
+            }
+        };
+
+        document.addEventListener('scroll', handleScroll);
+
+        return () => {
+            document.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
 
     return (
@@ -41,7 +67,7 @@ export const NavBar = () => {
                                     <a href="#seccionDos" className="item-mobile" onClick={handleShowMenu}>SECCIÓN DOS</a>
                                     <a href="#seccionTres" className="item-mobile" onClick={handleShowMenu}>SECCIÓN TRES</a>
                                     <a href="#seccionCuatro" className="item-mobile" onClick={handleShowMenu}>SECCIÓN CUATRO</a>
-                                    <a href="#seccionCinco" className="item-mobile" onClick={handleShowMenu}>SECCIÓN 5</a>
+                                    <a href="#seccionCinco" className="item-mobile" onClick={handleShowMenu}>SECCIÓN CINCO</a>
                                     <div className="navBarRRSS">
                                         <a href="" className="itemMenuRRSS" onClick={handleShowMenu}><i className="fa fa-instagram"></i></a>
                                         <a href="" className="itemMenuRRSS" onClick={handleShowMenu}><i className="fa fa-envelope"></i></a>
@@ -56,21 +82,19 @@ export const NavBar = () => {
             )
             }
 
-            {isLarge && (
-                <div className="navbar large">
-                    <h2>navbar large</h2>
+            {(isLarge || isXLarge || isXXLarge) && (
+                <div className="header">
+                    <nav ref={navbarRef} className="navBar-desktop" id="navBar">
+                        <img src={marca} alt="logo" />
+                        <a href="#seccionUno" className="item-desktop">SECCIÓN UNO</a>
+                        <a href="#seccionDos" className="item-desktop">SECCIÓN DOS</a>
+                        <a href="#seccionTres" className="item-desktop">SECCIÓN TRES</a>
+                        <a href="#seccionCuatro" className="item-desktop">SECCIÓN CUATRO</a>
+                        <a href="#seccionCinco" className="item-desktop">SECCIÓN CINCO</a>
+                    </nav>
                 </div>
             )}
-            {isXLarge && (
-                <div className="navbar xlarge">
-                    <h2>navbar xlarge</h2>
-                </div>
-            )}
-            {isXXLarge && (
-                <div className="navbar xxlarge">
-                    <h2>navbar xxlarge</h2>
-                </div>
-            )}
+
         </>
     )
 }

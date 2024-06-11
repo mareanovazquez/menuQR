@@ -8,7 +8,6 @@
     --hover-color:#E88D67;
     --background-color-navbar:#4682A9;
     --background-color-body:#F6F4EB;
-
 }
 
 body {
@@ -136,6 +135,45 @@ body {
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
     /* Tus estilos para dispositivos large y superiores van aquí */
+    .header .navBar-desktop {
+        background-color: var(--background-color-navbar);
+        height: 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 5px;
+    }
+    
+    .header .navBar-desktop img {
+        width: 80px;
+        }
+    .header .navBar-desktop .item-desktop {
+        font-family: var(--primary-font-family);
+        text-transform: uppercase;
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: var(--font-size-base);
+    }
+
+    .header .navBar-desktop .item-desktop:hover{
+        color: var(--hover-color);
+        transition: 0.2s;
+    }
+    .header .fixed {
+        position: fixed;
+        top: 2%;
+        left: 5%;
+        width: 90%;
+        background-color: #F9F8F8;
+        /* Puedes ajustar el color de fondo según tu diseño */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+        /* Sombra para resaltar */
+        animation: slideDown 0.7s ease;
+        /* Duración, transición y tipo de animación */
+    }
+
 }
 
 /* XLARGE | Desde 1200px en adelante */
@@ -188,5 +226,15 @@ body {
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
     }
 }
