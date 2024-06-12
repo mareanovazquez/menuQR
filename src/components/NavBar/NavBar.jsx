@@ -1,16 +1,19 @@
 import { useContext, useEffect, useRef, useState } from "react";
 import { VisibilityContext } from "../../context/VisibilityContext";
 import marca from "../../assets/marca.svg";
+import marcaWhite from "../../assets/marcaWhite.svg"
 
 export const NavBar = () => {
 
     const { isXSmall, isSmall, isMedium, isLarge, isXLarge, isXXLarge } = useContext(VisibilityContext);
     const [showMenu, setShowMenu] = useState(false)
+    const [menuFixed, setMenuFixed] = useState(false)
 
     const handleShowMenu = () => {
         setShowMenu(!showMenu)
     }
 
+   
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === 'Escape' && showMenu) {
@@ -35,8 +38,10 @@ export const NavBar = () => {
 
                 if (window.scrollY > seccionActivaRect.top) {
                     navBar.classList.add('fixed');
+                    setMenuFixed(true)
                 } else {
                     navBar.classList.remove('fixed');
+                    setMenuFixed(false)
                 }
             }
         };
@@ -85,7 +90,10 @@ export const NavBar = () => {
             {(isLarge || isXLarge || isXXLarge) && (
                 <div className="header">
                     <nav ref={navbarRef} className="navBar-desktop" id="navBar">
-                        <img src={marca} alt="logo" />
+                        {menuFixed ?
+                        <img src={marca} alt="logo" /> 
+                        :
+                        <img src={marcaWhite} alt="logo"/> }
                         <a href="#seccionUno" className="item-desktop">SECCIÓN UNO</a>
                         <a href="#seccionDos" className="item-desktop">SECCIÓN DOS</a>
                         <a href="#seccionTres" className="item-desktop">SECCIÓN TRES</a>
