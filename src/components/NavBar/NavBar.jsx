@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef, useState } from "react";
 import { VisibilityContext } from "../../context/VisibilityContext";
 import marca from "../../assets/marca.svg";
 import marcaWhite from "../../assets/marcaWhite.svg"
-
+import { NavLink } from 'react-router-dom';
 export const NavBar = () => {
 
     const { isXSmall, isSmall, isMedium, isLarge, isXLarge, isXXLarge } = useContext(VisibilityContext);
@@ -13,7 +13,7 @@ export const NavBar = () => {
         setShowMenu(!showMenu)
     }
 
-   
+
     useEffect(() => {
         const handleKeyDown = (event) => {
             if (event.key === 'Escape' && showMenu) {
@@ -68,17 +68,11 @@ export const NavBar = () => {
                         {showMenu &&
                             <div className={`container-navbar ${showMenu ? 'showMenu' : ''}`} id="container-navbar">
                                 <nav className="navbar-mobile">
-                                    <a href="#seccionUno" className="item-mobile" onClick={handleShowMenu}> SECCIÓN UNO</a>
-                                    <a href="#seccionDos" className="item-mobile" onClick={handleShowMenu}>SECCIÓN DOS</a>
-                                    <a href="#seccionTres" className="item-mobile" onClick={handleShowMenu}>SECCIÓN TRES</a>
-                                    <a href="#seccionCuatro" className="item-mobile" onClick={handleShowMenu}>SECCIÓN CUATRO</a>
-                                    <a href="#seccionCinco" className="item-mobile" onClick={handleShowMenu}>SECCIÓN CINCO</a>
-                                    <div className="navBarRRSS">
-                                        <a href="" className="itemMenuRRSS" onClick={handleShowMenu}><i className="fa fa-instagram"></i></a>
-                                        <a href="" className="itemMenuRRSS" onClick={handleShowMenu}><i className="fa fa-envelope"></i></a>
-                                        <a href="https://wa.me/ + número prefijo país sin signo + número de teléfono" className="itemMenuRRSS"
-                                            target="_blank" onClick={handleShowMenu}><i className="fa fa-whatsapp"></i></a>
-                                    </div>
+                                    <NavLink className='item-desktop' to='/' onClick={handleShowMenu}>Home</NavLink>
+                                    <NavLink className='item-desktop' to='/bakery' onClick={handleShowMenu}>Bakery</NavLink>
+                                    <NavLink className='item-desktop' to='/infusiones' onClick={handleShowMenu} >Infusiones</NavLink>
+                                    <NavLink className='item-desktop' to='/comidas' onClick={handleShowMenu}>Comidas</NavLink>
+                                    <NavLink className='item-desktop' to='/bebidas' onClick={handleShowMenu}>Bebidas</NavLink>
                                 </nav>
                             </div>
                         }
@@ -90,15 +84,15 @@ export const NavBar = () => {
             {(isLarge || isXLarge || isXXLarge) && (
                 <div className="header">
                     <nav ref={navbarRef} className="navBar-desktop" id="navBar">
-                        {menuFixed ?
-                        <img src={marca} alt="logo" /> 
-                        :
-                        <img src={marcaWhite} alt="logo"/> }
-                        <a href="#seccionUno" className="item-desktop">SECCIÓN UNO</a>
-                        <a href="#seccionDos" className="item-desktop">SECCIÓN DOS</a>
-                        <a href="#seccionTres" className="item-desktop">SECCIÓN TRES</a>
-                        <a href="#seccionCuatro" className="item-desktop">SECCIÓN CUATRO</a>
-                        <a href="#seccionCinco" className="item-desktop">SECCIÓN CINCO</a>
+                        <NavLink className='item-desktop' to='/'>{menuFixed ?
+                            <img src={marca} alt="logo" />
+                            :
+                            <img src={marcaWhite} alt="logo" />}</NavLink>
+
+                        <NavLink className='item-desktop' to='/bakery'>Bakery</NavLink>
+                        <NavLink className='item-desktop' to='/infusiones'>Infusiones</NavLink>
+                        <NavLink className='item-desktop' to='/comidas'>Comidas</NavLink>
+                        <NavLink className='item-desktop' to='/bebidas'>Bebidas</NavLink>
                     </nav>
                 </div>
             )}

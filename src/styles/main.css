@@ -31,36 +31,26 @@ body {
     border-radius: 5px;
     position: fixed;
     animation: slideInFromLeft 0.5s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .header .showMenu .navbar-mobile a {
     font-family: var(--primary-font-family);
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--navbar-color);
+    color: var(--primary-font-light-color);
     font-size: 30px;
     padding-top: 30px;
     padding-left: 10px;
 }
 
-.header .showMenu .navbar-mobile .navBarRRSS {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+
 
 .header .showMenu .navbar-mobile a:hover {
     color: var(--hover-color);
     transition: 0.2s;
 }
 
-.header .showMenu .navbar-mobile.navBarRRSS a {
-    text-decoration: none;
-    color: var(--navbar-color);
-    font-size: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 /* MENU BOTÓN TOGGLE */
 .header .toggle {
@@ -76,7 +66,7 @@ body {
     left: 30px;
     top: 30px;
     overflow: hidden;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.08);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     border-radius: 5px;
     z-index: 4444;
 }
@@ -86,7 +76,7 @@ body {
     position: relative;
     width: 40px;
     height: 4px;
-    background:var(--navbar-color);
+    background:var(--primary-font-light-color);
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -125,6 +115,14 @@ body {
 .toggle.active span:nth-child(3) {
     transform: translateX(70px);
     transition: 0.5s ease-in-out;
+}
+
+.container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 
