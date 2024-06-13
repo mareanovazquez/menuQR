@@ -69,10 +69,10 @@ export const NavBar = () => {
                             <div className={`container-navbar ${showMenu ? 'showMenu' : ''}`} id="container-navbar">
                                 <nav className="navbar-mobile">
                                     <NavLink className='item-desktop' to='/' onClick={handleShowMenu}>Home</NavLink>
-                                    <NavLink className='item-desktop' to='/bakery' onClick={handleShowMenu}>Bakery</NavLink>
                                     <NavLink className='item-desktop' to='/infusiones' onClick={handleShowMenu} >Infusiones</NavLink>
-                                    <NavLink className='item-desktop' to='/comidas' onClick={handleShowMenu}>Comidas</NavLink>
                                     <NavLink className='item-desktop' to='/bebidas' onClick={handleShowMenu}>Bebidas</NavLink>
+                                    <NavLink className='item-desktop' to='/bakery' onClick={handleShowMenu}>Bakery</NavLink>
+                                    <NavLink className='item-desktop' to='/comidas' onClick={handleShowMenu}>Comidas</NavLink>
                                 </nav>
                             </div>
                         }
@@ -89,10 +89,10 @@ export const NavBar = () => {
                             :
                             <img src={marcaWhite} alt="logo" />}</NavLink>
 
-                        <NavLink className='item-desktop' to='/bakery'>Bakery</NavLink>
                         <NavLink className='item-desktop' to='/infusiones'>Infusiones</NavLink>
-                        <NavLink className='item-desktop' to='/comidas'>Comidas</NavLink>
                         <NavLink className='item-desktop' to='/bebidas'>Bebidas</NavLink>
+                        <NavLink className='item-desktop' to='/bakery'>Bakery</NavLink>
+                        <NavLink className='item-desktop' to='/comidas'>Comidas</NavLink>
                     </nav>
                 </div>
             )}
