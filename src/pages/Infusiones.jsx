@@ -11,7 +11,9 @@ export const Infusiones = () => {
                     </div>
                     <div className="menu-body">
                         <div className="menu-item">
-                            <p className="item-name">Americano</p>
+                            <div className="item-name">
+                                <p className="name">Americano</p>
+                                <p className="description">Descripción</p></div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
