@@ -3,43 +3,43 @@ export const Bakery = () => {
         <>
             <section className="seccion seccion-bakery">
                 <h2>Bakery</h2>
-                <div class="menu-container menu-bakery">
-                    <div class="menu-header">
-                        <span class="header-item"></span>
-                        <span class="header-item"></span>
+                <div className="menu-container menu-bakery">
+                    <div className="menu-header">
+                        <span className="header-item"></span>
+                        <span className="header-item"></span>
                     </div>
-                    <div class="menu-body">
-                        <div class="menu-item">
-                            <p class="item-name">Medialunas</p>
-                            <p class="item-price">$0000.00</p>
+                    <div className="menu-body">
+                        <div className="menu-item">
+                            <p className="item-name">Medialunas</p>
+                            <p className="item-price">$0000.00</p>
                         </div>
-                        <div class="menu-item">
-                            <p class="item-name">Tostada francesa</p>
-                            <p class="item-price">$0000.00</p>
+                        <div className="menu-item">
+                            <p className="item-name">Tostada francesa</p>
+                            <p className="item-price">$0000.00</p>
                         </div>
-                        <div class="menu-item">
-                            <p class="item-name">Porción de torta</p>
-                            <p class="item-price">$0000.00</p>
+                        <div className="menu-item">
+                            <p className="item-name">Porción de torta</p>
+                            <p className="item-price">$0000.00</p>
                         </div>
-                        <div class="menu-item">
-                            <p class="item-name">Cupcakes</p>
-                            <p class="item-price">$0000.00</p>
+                        <div className="menu-item">
+                            <p className="item-name">Cupcakes</p>
+                            <p className="item-price">$0000.00</p>
                         </div>
-                        <div class="menu-item">
-                            <p class="item-name">Alfajor triple</p>
-                            <p class="item-price">$0000.00</p>
+                        <div className="menu-item">
+                            <p className="item-name">Alfajor triple</p>
+                            <p className="item-price">$0000.00</p>
                         </div>
-                        <div class="menu-item">
-                            <p class="item-name">Rollos de canela</p>
-                            <p class="item-price">$0000.00</p>
+                        <div className="menu-item">
+                            <p className="item-name">Rollos de canela</p>
+                            <p className="item-price">$0000.00</p>
                         </div>
-                        <div class="menu-item">
-                            <p class="item-name">Panqueques</p>
-                            <p class="item-price">$0000.00</p>
+                        <div className="menu-item">
+                            <p className="item-name">Panqueques</p>
+                            <p className="item-price">$0000.00</p>
                         </div>
-                        <div class="menu-item">
-                            <p class="item-name">Brownie con helado</p>
-                            <p class="item-price">$0000.00</p>
+                        <div className="menu-item">
+                            <p className="item-name">Brownie con helado</p>
+                            <p className="item-price">$0000.00</p>
                         </div>
                     </div>
                 </div>

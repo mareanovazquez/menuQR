@@ -4,48 +4,46 @@ export const Infusiones = () => {
         <>
             <div className="seccion seccion-infusiones">
                 <h2>Infusiones</h2>
-                <table class="menu-table table-infusiones">
-                    <thead class="table-header">
-                        <tr>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody class="table-body">
-                        <tr class="item-row">
-                            <td class="item-cell">Frappé de café</td>
-                            <td class="price-cell">$0000.00</td>
-                        </tr>
-                        <tr class="item-row">
-                            <td class="item-cell">Frappé de chocolate</td>
-                            <td class="price-cell">$0000.00</td>
-                        </tr>
-                        <tr class="item-row">
-                            <td class="item-cell">Té helado</td>
-                            <td class="price-cell">$0000.00</td>
-                        </tr>
-                        <tr class="item-row">
-                            <td class="item-cell">Licuado de frutas</td>
-                            <td class="price-cell">$0000.00</td>
-                        </tr>
-                        <tr class="item-row">
-                            <td class="item-cell">Limonada</td>
-                            <td class="price-cell">$0000.00</td>
-                        </tr>
-                        <tr class="item-row">
-                            <td class="item-cell">Jugo de naranja</td>
-                            <td class="price-cell">$0000.00</td>
-                        </tr>
-                        <tr class="item-row">
-                            <td class="item-cell">Gaseosa chica</td>
-                            <td class="price-cell">$0000.00</td>
-                        </tr>
-                        <tr class="item-row">
-                            <td class="item-cell">Agua mineral</td>
-                            <td class="price-cell">$0000.00</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className="menu-container menu-cafe">
+                    <div className="menu-header">
+                        <span className="header-item"></span>
+                        <span className="header-item"></span>
+                    </div>
+                    <div className="menu-body">
+                        <div className="menu-item">
+                            <p className="item-name">Americano</p>
+                            <p className="item-price">$0000.00</p>
+                        </div>
+                        <div className="menu-item">
+                            <p className="item-name">Capuchino</p>
+                            <p className="item-price">$0000.00</p>
+                        </div>
+                        <div className="menu-item">
+                            <p className="item-name">Doble Expreso</p>
+                            <p className="item-price">$0000.00</p>
+                        </div>
+                        <div className="menu-item">
+                            <p className="item-name">Café con leche</p>
+                            <p className="item-price">$0000.00</p>
+                        </div>
+                        <div className="menu-item">
+                            <p className="item-name">Chocolatada</p>
+                            <p className="item-price">$0000.00</p>
+                        </div>
+                        <div className="menu-item">
+                            <p className="item-name">Té de manzanilla</p>
+                            <p className="item-price">$0000.00</p>
+                        </div>
+                        <div className="menu-item">
+                            <p className="item-name">Té de hierbas</p>
+                            <p className="item-price">$0000.00</p>
+                        </div>
+                        <div className="menu-item">
+                            <p className="item-name">Té clásico</p>
+                            <p className="item-price">$0000.00</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )

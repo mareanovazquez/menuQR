@@ -70,12 +70,23 @@ text-align: center;
 font-size: 1.8rem;
 }
 
-.container-main .seccion .menu-table{
-    border-collapse: separate;
-    border-spacing: 10px;
-        
+.container-main .seccion .menu-container .menu-body .menu-item {
+    border-bottom-color: var(--background-color-navbar);
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.container-main .seccion .menu-container .menu-body .menu-item .item-price {
+    background-color: var(--background-color-navbar);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--background-color-body);
+}
 
 
 /* SMALL | Entre 576px y 767px */
