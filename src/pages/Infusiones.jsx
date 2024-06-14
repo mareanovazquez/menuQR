@@ -4,45 +4,45 @@ export const Infusiones = () => {
         <>
             <div className="seccion seccion-infusiones">
                 <h2>Infusiones</h2>
-                <table>
-                    <thead>
+                <table class="menu-table table-infusiones">
+                    <thead class="table-header">
                         <tr>
-                            <th>Producto</th>
-                            <th>Precio</th>
+                            <th></th>
+                            <th></th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>Americano</td>
-                            <td>$0000.00</td>
+                    <tbody class="table-body">
+                        <tr class="item-row">
+                            <td class="item-cell">Frappé de café</td>
+                            <td class="price-cell">$0000.00</td>
                         </tr>
-                        <tr>
-                            <td>Capuchino</td>
-                            <td>$0000.00</td>
+                        <tr class="item-row">
+                            <td class="item-cell">Frappé de chocolate</td>
+                            <td class="price-cell">$0000.00</td>
                         </tr>
-                        <tr>
-                            <td>Doble Expreso</td>
-                            <td>$0000.00</td>
+                        <tr class="item-row">
+                            <td class="item-cell">Té helado</td>
+                            <td class="price-cell">$0000.00</td>
                         </tr>
-                        <tr>
-                            <td>Café con leche</td>
-                            <td>$0000.00</td>
+                        <tr class="item-row">
+                            <td class="item-cell">Licuado de frutas</td>
+                            <td class="price-cell">$0000.00</td>
                         </tr>
-                        <tr>
-                            <td>Chocolatada</td>
-                            <td>$0000.00</td>
+                        <tr class="item-row">
+                            <td class="item-cell">Limonada</td>
+                            <td class="price-cell">$0000.00</td>
                         </tr>
-                        <tr>
-                            <td>Té de manzanilla</td>
-                            <td>$0000.00</td>
+                        <tr class="item-row">
+                            <td class="item-cell">Jugo de naranja</td>
+                            <td class="price-cell">$0000.00</td>
                         </tr>
-                        <tr>
-                            <td>Té de hierbas</td>
-                            <td>$0000.00</td>
+                        <tr class="item-row">
+                            <td class="item-cell">Gaseosa chica</td>
+                            <td class="price-cell">$0000.00</td>
                         </tr>
-                        <tr>
-                            <td>Té clásico</td>
-                            <td>$0000.00</td>
+                        <tr class="item-row">
+                            <td class="item-cell">Agua mineral</td>
+                            <td class="price-cell">$0000.00</td>
                         </tr>
                     </tbody>
                 </table>

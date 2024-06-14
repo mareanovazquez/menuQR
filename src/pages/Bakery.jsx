@@ -3,48 +3,46 @@ export const Bakery = () => {
         <>
             <section className="seccion seccion-bakery">
                 <h2>Bakery</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Producto</th>
-                            <th>Precio</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Medialunas</td>
-                            <td>$0000.00</td>
-                        </tr>
-                        <tr>
-                            <td>Tostada francesa</td>
-                            <td>$0000.00</td>
-                        </tr>
-                        <tr>
-                            <td>Porción de torta</td>
-                            <td>$0000.00</td>
-                        </tr>
-                        <tr>
-                            <td>Cupcakes</td>
-                            <td>$0000.00</td>
-                        </tr>
-                        <tr>
-                            <td>Alfajor triple</td>
-                            <td>$0000.00</td>
-                        </tr>
-                        <tr>
-                            <td>Rollos de canela</td>
-                            <td>$0000.00</td>
-                        </tr>
-                        <tr>
-                            <td>Panqueques</td>
-                            <td>$0000.00</td>
-                        </tr>
-                        <tr>
-                            <td>Brownie con helado</td>
-                            <td>$0000.00</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="menu-container menu-bakery">
+                    <div class="menu-header">
+                        <span class="header-item"></span>
+                        <span class="header-item"></span>
+                    </div>
+                    <div class="menu-body">
+                        <div class="menu-item">
+                            <p class="item-name">Medialunas</p>
+                            <p class="item-price">$0000.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="item-name">Tostada francesa</p>
+                            <p class="item-price">$0000.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="item-name">Porción de torta</p>
+                            <p class="item-price">$0000.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="item-name">Cupcakes</p>
+                            <p class="item-price">$0000.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="item-name">Alfajor triple</p>
+                            <p class="item-price">$0000.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="item-name">Rollos de canela</p>
+                            <p class="item-price">$0000.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="item-name">Panqueques</p>
+                            <p class="item-price">$0000.00</p>
+                        </div>
+                        <div class="menu-item">
+                            <p class="item-name">Brownie con helado</p>
+                            <p class="item-price">$0000.00</p>
+                        </div>
+                    </div>
+                </div>
             </section>
         </>
     )

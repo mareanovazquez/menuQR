@@ -18,16 +18,9 @@
     --background-color-body: #F6F4EB;
 }
 
-.seccion-bebidas,
-.seccion-bakery,
-.seccion-comidas,
-.seccion-infusiones {
-    height: 2000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+.container-main .seccion {
+    font-family: var(--primary-font-family);
+    color: var(--primary-font-color);
 }
 
 .container-main .seccion-home {
@@ -36,8 +29,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-   
+    flex-wrap: wrap;   
 }
 
 .container-main .seccion-home a {
@@ -54,13 +46,62 @@
     background-color: var(--background-color-items);
     margin: 20px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container-main .seccion-home .item-home:hover {
-
     background-color: var(--background-color-navbar);
+}
+
+.container-main .seccion-bebidas,
+.container-main .seccion-bakery,
+.container-main .seccion-comidas,
+.container-main .seccion-infusiones {
+    height: 70vh;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-main .seccion h2 {
+text-align: center;
+font-size: 1.8rem;
+}
+
+.container-main .seccion .menu-table{
+    border-collapse: separate;
+    border-spacing: 10px;
+        
+}
+
+
+
+/* SMALL | Entre 576px y 767px */
+ /* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {
+}
+
+/* MEDIUM | Entre 768px y 991px  */
+/* Bootstrap breakpoints MD y superiores */
+@media (min-width: 768px) {
+}
+
+/* LARGE | Entre 992px y 1199px */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 992px) {
+    /* Tus estilos para dispositivos large y superiores van aquí */
+}
+
+/* XLARGE | Desde 1200px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1200px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
+}
+
+/* XXLARGE | Desde 1400px en adelante */
+/* Bootstrap breakpoints LG y superiores */
+@media (min-width: 1400px) {
+    /* Tus estilos para dispositivos extra large y superiores van aquí */
 }
