@@ -16,6 +16,7 @@ import { Home } from './pages/Home'
 import { Bebidas } from './pages/Bebidas'
 import { Infusiones } from './pages/Infusiones'
 import { Comidas } from './pages/Comidas'
+import { Admin } from './pages/Admin'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
             <Route path='/bakery' element={<Bakery />} />
             <Route path='/infusiones' element={<Infusiones />} />
             <Route path='/comidas' element={<Comidas />} />
+            <Route path='/admin' element={<Admin/>}/>
           </Routes>
         </ContainerMain>
       </BrowserRouter>

@@ -1,4 +1,14 @@
-my-vite-project/
+menuQR/
+│
+├── public/                # Archivos estáticos que se sirven tal cual
+│   └── favicon.ico        # Favicon del sitio
+│
+├── src/                   # Carpeta principal del código fuente
+│   ├── assets/            # Archivos estáticos como imágenes y fuentes
+│   │   └── logo.png
+│   │
+│   ├── components/        # Componentes reutilizables
+│   │   menuQR/
 │
 ├── public/                # Archivos estáticos que se sirven tal cual
 │   └── favicon.ico        # Favicon del sitio
@@ -9,6 +19,42 @@ my-vite-project/
 │   │
 │   ├── components/        # Componentes reutilizables
 │   │   ├── Header.jsx
+│   │   ├── Containers.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Toggle.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── hooks/             # Custom Hooks
+│   │   └── useAuth.js
+│   │
+│   ├── pages/             # Páginas del sitio
+│   │   ├── Home.jsx
+│   │   ├── Bakery.jsx
+│   │   ├── Bebidas.jsx
+│   │   ├── Comidas.jsx
+│   │   ├── Infusiones.jsx
+│   │   ├── Admin.jsx
+│   │   └── About.jsx
+│   │
+│   ├── services/            # Carpeta específica para servicios
+│   │   └── httpService.js   # Servicio HTTP
+│   │
+│   ├── styles/            # Archivos de estilos (CSS, SASS, etc.)
+│   │   └── main.css       # Estilos globales de la App
+│   │   └── App.css        # Estilos específicos del componente App
+│   │
+│   ├── utils/             # Funciones y utilidades reutilizables
+│   │   └── api.js
+│   │
+│   ├── App.jsx            # Componente principal de la aplicación
+│   ├── main.jsx           # Punto de entrada de la aplicación
+│
+├── .gitignore             # Archivos y carpetas a ignorar por Git
+├── index.html             # Archivo HTML principal
+├── package.json           # Dependencias y scripts de NPM
+├── README.md              # Documentación del proyecto
+└── vite.config.js         # Configuración de Vite
+
 │   │   └── Footer.jsx
 │   │
 │   ├── hooks/             # Custom Hooks
