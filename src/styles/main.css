@@ -44,13 +44,10 @@ body {
     padding-left: 10px;
 }
 
-
-
 .header .showMenu .navbar-mobile a:hover {
     color: var(--hover-color);
     transition: 0.2s;
 }
-
 
 /* MENU BOTÓN TOGGLE */
 .header .toggle {
@@ -121,13 +118,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
 .container-form {
     font-family: var(--primary-font-family);
 }
+
+
 
 /* SMALL | Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */

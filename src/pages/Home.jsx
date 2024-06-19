@@ -1,9 +1,11 @@
 import { NavLink } from 'react-router-dom';
+import { NavBar } from '../components/NavBar/NavBar';
 
 export const Home = () => {
 
     return (
         <>
+        <NavBar/>
             <div className="seccion seccion-home ">
                 <NavLink to='/infusiones'><div className="item-home">
                     INFUSIONES

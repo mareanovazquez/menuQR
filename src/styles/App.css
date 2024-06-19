@@ -14,7 +14,7 @@
     --hover-font-color: #E88D67;
 
     --background-color-navbar: #8B0328;
-    --background-color-items:#61041D;
+    --background-color-items: #61041D;
     --background-color-body: #F6F4EB;
 }
 
@@ -29,7 +29,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
 .container-main .seccion-home a {
@@ -66,8 +66,8 @@
 }
 
 .container-main .seccion h2 {
-text-align: center;
-font-size: 1.8rem;
+    text-align: center;
+    font-size: 1.8rem;
 }
 
 .container-main .seccion .menu-container .menu-body .menu-item {
@@ -80,18 +80,21 @@ font-size: 1.8rem;
     align-items: center;
     justify-content: space-between;
 }
+
 .container-main .seccion .menu-container .menu-body .menu-item .item-name .name {
     font-size: 16px;
     color: var(--primary-font-color);
     font-weight: 700;
     letter-spacing: 1px;
-    
+
 }
-.container-main .seccion .menu-container .menu-body .menu-item .item-name .description{
+
+.container-main .seccion .menu-container .menu-body .menu-item .item-name .description {
     font-size: 14px;
     color: var(--secondary-font-color);
     font-style: italic;
 }
+
 .container-main .seccion .menu-container .menu-body .menu-item .item-price {
     background-color: var(--background-color-navbar);
     padding: 10px;
@@ -99,16 +102,23 @@ font-size: 1.8rem;
     color: var(--background-color-body);
 }
 
+.container-form {
+    border-width: 1px;
+    border-color: var(--background-color-items);
+    border-style: solid;
+    border-radius: 5px;
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+}
 
 /* SMALL | Entre 576px y 767px */
- /* Bootstrap breakpoints SM y superiores */
-@media (min-width: 576px) {
-}
+/* Bootstrap breakpoints SM y superiores */
+@media (min-width: 576px) {}
 
 /* MEDIUM | Entre 768px y 991px  */
 /* Bootstrap breakpoints MD y superiores */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
 /* LARGE | Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */

@@ -68,7 +68,7 @@ export const NavBar = () => {
                         {showMenu &&
                             <div className={`container-navbar ${showMenu ? 'showMenu' : ''}`} id="container-navbar">
                                 <nav className="navbar-mobile">
-                                    <NavLink className='item-desktop' to='/' onClick={handleShowMenu}>Home</NavLink>
+                                    <NavLink className='item-desktop' to='/home' onClick={handleShowMenu}>Home</NavLink>
                                     <NavLink className='item-desktop' to='/infusiones' onClick={handleShowMenu} >Infusiones</NavLink>
                                     <NavLink className='item-desktop' to='/bebidas' onClick={handleShowMenu}>Bebidas</NavLink>
                                     <NavLink className='item-desktop' to='/bakery' onClick={handleShowMenu}>Bakery</NavLink>
@@ -84,7 +84,7 @@ export const NavBar = () => {
             {(isLarge || isXLarge || isXXLarge) && (
                 <div className="header">
                     <nav ref={navbarRef} className="navBar-desktop" id="navBar">
-                        <NavLink className='item-desktop' to='/'>{menuFixed ?
+                        <NavLink className='item-desktop' to='/home'>{menuFixed ?
                             <img src={marca} alt="logo" />
                             :
                             <img src={marcaWhite} alt="logo" />}</NavLink>

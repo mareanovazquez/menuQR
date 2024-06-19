@@ -1,6 +1,9 @@
+import { NavBar } from "../components/NavBar/NavBar"
+
 export const Comidas = () => {
     return (
         <>
+        <NavBar/>
             <div className="seccion seccion-comidas">
                 <h2>Comidas</h2>
                 <div className="menu-container menu-comidas">

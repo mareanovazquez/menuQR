@@ -1,7 +1,10 @@
+import { NavBar } from "../components/NavBar/NavBar"
+
 export const Infusiones = () => {
 
     return (
         <>
+        <NavBar/>
             <div className="seccion seccion-infusiones">
                 <h2>Infusiones</h2>
                 <div className="menu-container menu-cafe">

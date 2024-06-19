@@ -1,6 +1,9 @@
+import { NavBar } from "../components/NavBar/NavBar"
+
 export const Bakery = () => {
     return (
         <>
+        <NavBar/>
             <section className="seccion seccion-bakery">
                 <h2>Bakery</h2>
                 <div className="menu-container menu-bakery">

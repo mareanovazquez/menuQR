@@ -1,7 +1,10 @@
+import { NavBar } from "../components/NavBar/NavBar"
+
 export const Bebidas = () => {
 
     return (
         <>
+        <NavBar/>
             <div className="seccion seccion-bebidas">
                 <h2>Bebidas</h2>
                 <div className="menu-container menu-bebidas">
