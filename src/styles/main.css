@@ -8,12 +8,10 @@
     --primary-font-light-color: #DCE1F4;
     --secondary-font-light-color: #E7EBF7;
 
-    --navbar-mobile-color: #FAF9F5;
-    --navbar-desktop-color: #FAF9F5;
-
+    --navbar-color: #FAF9F5;
     --hover-font-color: #E88D67;
 
-    --background-color-navbar: #8B0328;
+    --primary-color: #8B0328;
     --background-color-body: #F6F4EB;
 }
 
@@ -22,7 +20,7 @@ body {
 }
 
 .header .showMenu .navbar-mobile {
-    background-color: var(--background-color-navbar);
+    background-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,12 +38,11 @@ body {
     text-decoration: none;
     color: var(--primary-font-light-color);
     font-size: 30px;
-    padding-top: 30px;
-    padding-left: 10px;
+    padding: 30px 0 0 10px;
 }
 
 .header .showMenu .navbar-mobile a:hover {
-    color: var(--hover-color);
+    color: var(--hover-font-color);
     transition: 0.2s;
 }
 
@@ -53,7 +50,7 @@ body {
 .header .toggle {
     width: 60px;
     height: 60px;
-    background: var(--background-color-navbar);
+    background: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,7 +68,7 @@ body {
 .header .toggle span {
     display: inline-block;
     position: relative;
-    width: 40px;
+    width: 30px;
     height: 4px;
     background: var(--primary-font-light-color);
     border-radius: 10px;
@@ -81,37 +78,28 @@ body {
 /* ANIMACIÓN TOGGLE */
 .toggle span:nth-child(1) {
     transform: translateY(-15px);
-    width: 30px;
-    /* left: 15px; */
-}
-
-.toggle.active span:nth-child(1) {
-    width: 40px;
-    transform: translateY(1px) rotate(45deg);
-    transition-delay: 0.125s;
-}
-
-.toggle span:nth-child(2) {
-    /* transform: translateY(15px); */
-    width: 30px;
-    /* left: 15px; */
-}
-
-.toggle.active span:nth-child(2) {
-    width: 40px;
-    transform: translateY(-2px) rotate(315deg);
-    transition-delay: 0.25s;
 }
 
 .toggle span:nth-child(3) {
     transform: translateY(15px);
-    width: 30px;
-    /* left: 15px; */
+}
+
+.toggle.active span {
+    width: 40px;
+}
+
+.toggle.active span:nth-child(1) {
+    transform: translateY(1px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+
+.toggle.active span:nth-child(2) {
+    transform: translateY(-2px) rotate(315deg);
+    transition-delay: 0.25s;
 }
 
 .toggle.active span:nth-child(3) {
     transform: translateX(70px);
-    transition: 0.5s ease-in-out;
 }
 
 .container-main {
@@ -125,9 +113,7 @@ body {
     font-family: var(--primary-font-family);
 }
 
-input,
-button {
-
+input {
     padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -136,18 +122,19 @@ button {
 
 label {
     font-weight: bold;
-    margin-right: 3px;
-    margin-left: 10px;
+    padding: 8px 0 3px;
 }
 
 button {
-    margin-left: 10px;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-size-base);
     background-color: var(--background-color-body);
     color: var(--primary-font-color);
     cursor: pointer;
-    border: none;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    padding: 15px;
 }
 
 button:hover {
@@ -158,19 +145,21 @@ button:hover {
 
 /* SMALL | Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    /* Tus futuros estilos para dispositivos small irán aquí */
+}
 
 /* MEDIUM | Entre 768px y 991px  */
 /* Bootstrap breakpoints MD y superiores */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    /* Tus futuros estilos para dispositivos medium irán aquí */
+}
 
 /* LARGE | Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
-
-    /* Tus estilos para dispositivos large y superiores van aquí */
     .header .navBar-desktop {
-        background-color: var(--background-color-navbar);
+        background-color: var(--primary-color);
         height: 70px;
         width: 90%;
         position: absolute;
@@ -196,7 +185,7 @@ button:hover {
     }
 
     .header .navBar-desktop .item-desktop:hover {
-        color: var(--hover-color);
+        color: var(--hover-font-color);
         transition: 0.2s;
     }
 
@@ -206,11 +195,8 @@ button:hover {
         left: 5%;
         width: 90%;
         background-color: #F9F8F8;
-        /* Puedes ajustar el color de fondo según tu diseño */
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-        /* Sombra para resaltar */
         animation: slideDown 0.7s ease;
-        /* Duración, transición y tipo de animación */
     }
 
     .header .navBar-desktop.fixed .item-desktop {
@@ -221,67 +207,62 @@ button:hover {
         color: var(--hover-font-color);
     }
 
+    label {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    input#item-name {
+        width: 15%;
+    }
+
+    input#item-description {
+        width: 25%;
+    }
+
+    input#item-price {
+        width: 12%;
+    }
+
+    button {
+        margin-top: 0;
+    }
 }
 
 /* XLARGE | Desde 1200px en adelante */
-/* Bootstrap breakpoints LG y superiores */
+/* Bootstrap breakpoints XL y superiores */
 @media (min-width: 1200px) {
-    /* Tus estilos para dispositivos extra large y superiores van aquí */
+    /* Tus futuros estilos para dispositivos extra large irán aquí */
 }
 
 /* XXLARGE | Desde 1400px en adelante */
-/* Bootstrap breakpoints LG y superiores */
+/* Bootstrap breakpoints XXL y superiores */
 @media (min-width: 1400px) {
-    /* Tus estilos para dispositivos extra large y superiores van aquí */
+    /* Tus futuros estilos para dispositivos extra extra large irán aquí */
 }
 
-/*ANIMATIONS*/
+/* ANIMATIONS */
 @keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
 }
 
 @keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
 }
 
 @keyframes slideInFromTop {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(0); }
 }
 
 @keyframes slideInFromBottom {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
 }
 
 @keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-    }
-
-    to {
-        transform: translateY(0);
-    }
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
 }

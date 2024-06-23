@@ -28,7 +28,7 @@ export const AdminComidas = () => {
             <div className="container-form-admin">
                 <h4>Añadir nuevos productos</h4>
                 <form onSubmit={(e) => { e.preventDefault(); addMenuItem(); }}>
-                    <label htmlFor="item-name">Nombre del ítem</label>
+                    <label htmlFor="item-name">Nombre</label>
                     <input
                         type="text"
                         id="item-name"
@@ -55,7 +55,7 @@ export const AdminComidas = () => {
                         required
                     />
 
-                    <button type="submit">Agregar ítem</button>
+                    <button type="submit">Añadir</button>
                 </form>
 
             </div>

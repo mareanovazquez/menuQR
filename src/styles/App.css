@@ -8,9 +8,7 @@
     --primary-font-light-color: #DCE1F4;
     --secondary-font-light-color: #E7EBF7;
 
-    --navbar-mobile-color: #FAF9F5;
-    --navbar-desktop-color: #FAF9F5;
-
+    --navbar-color: #FAF9F5;
     --hover-font-color: #E88D67;
 
     --background-color-navbar: #8B0328;
@@ -71,21 +69,24 @@
 }
 
 .container-main .seccion .menu-container .menu-body .menu-item {
-    border-bottom-color: var(--background-color-navbar);
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-
+    border-bottom: 2px solid var(--background-color-navbar);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+
 .container-main .seccion .menu-container .menu-body .menu-item .item-name {
     width: 70%;
 }
-.container-main .seccion .menu-container .menu-body .menu-item .item-price{
+
+.container-main .seccion .menu-container .menu-body .menu-item .item-price {
     width: 15%;
     text-align: center;
+    background-color: var(--background-color-navbar);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--background-color-body);
 }
 
 .container-main .seccion .menu-container .menu-body .menu-item .btn-admin {
@@ -105,23 +106,15 @@
     font-style: italic;
 }
 
-.container-main .seccion .menu-container .menu-body .menu-item .item-price {
-    background-color: var(--background-color-navbar);
-    padding: 10px;
-    border-radius: 5px;
-    color: var(--background-color-body);
-}
-
 .container-form {
-    border-width: 1px;
-    border-color: var(--background-color-items);
-    border-style: solid;
+    border: 1px solid var(--background-color-items);
     border-radius: 5px;
     width: 80%;
     height: 60vh;
     margin: 0 auto;
 }
 
+.container-admin,
 .container-title-admin {
     font-family: var(--primary-font-family);
     font-size: 2rem;
@@ -141,36 +134,41 @@
 
 .container-main .container-form-admin form {
     font-family: var(--primary-font-family);
-    padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
 }
-
 
 /* SMALL | Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
-@media (min-width: 576px) {}
+@media (min-width: 576px) {
+    /* Tus futuros estilos para dispositivos small irán aquí */
+}
 
 /* MEDIUM | Entre 768px y 991px  */
 /* Bootstrap breakpoints MD y superiores */
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    /* Tus futuros estilos para dispositivos medium irán aquí */
+}
 
 /* LARGE | Entre 992px y 1199px */
 /* Bootstrap breakpoints LG y superiores */
 @media (min-width: 992px) {
-    /* Tus estilos para dispositivos large y superiores van aquí */
+    .container-main .container-form-admin form {
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
 
 /* XLARGE | Desde 1200px en adelante */
-/* Bootstrap breakpoints LG y superiores */
+/* Bootstrap breakpoints XL y superiores */
 @media (min-width: 1200px) {
-    /* Tus estilos para dispositivos extra large y superiores van aquí */
+    /* Tus futuros estilos para dispositivos extra large irán aquí */
 }
 
 /* XXLARGE | Desde 1400px en adelante */
-/* Bootstrap breakpoints LG y superiores */
+/* Bootstrap breakpoints XXL y superiores */
 @media (min-width: 1400px) {
-    /* Tus estilos para dispositivos extra large y superiores van aquí */
+    /* Tus futuros estilos para dispositivos extra extra large irán aquí */
 }

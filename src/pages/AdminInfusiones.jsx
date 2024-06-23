@@ -62,7 +62,7 @@ export const AdminInfusiones = () => {
             </div>
 
             <div className="seccion seccion-infusiones">
-                <h2>Infusiones</h2>
+                
                 <div className="menu-container menu-cafe">
                     <div className="menu-header">
                         <span className="header-item"></span>
