@@ -3,7 +3,7 @@ import { NavBar } from "../components/NavBar/NavBar"
 export const Comidas = () => {
     return (
         <>
-        <NavBar/>
+            <NavBar />
             <div className="seccion seccion-comidas">
                 <h2>Comidas</h2>
                 <div className="menu-container menu-comidas">
@@ -11,37 +11,62 @@ export const Comidas = () => {
                         <span className="header-item"></span>
                         <span className="header-item"></span>
                     </div>
+
                     <div className="menu-body">
                         <div className="menu-item">
-                            <p className="item-name">Tostada con palta</p>
+                            <div className="item-name">
+                                <p className="name">Tostada con palta</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Tostado clásico</p>
+                            <div className="item-name">
+                                <p className="name">Tostado clásico</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Sandwich vegano</p>
+                            <div className="item-name">
+                                <p className="name">Sandwich vegano</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Pan de queso</p>
+                            <div className="item-name">
+                                <p className="name">Pan de queso</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Medialunas saladas</p>
+                            <div className="item-name">
+                                <p className="name">Medialunas saladas</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Sandwich de pollo</p>
+                            <div className="item-name">
+                                <p className="name">Sandwich de pollo</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Huevos revueltos</p>
+                            <div className="item-name">
+                                <p className="name">Huevos revueltos</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Pizza individual</p>
+                            <div className="item-name">
+                                <p className="name">Pizza individual</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                     </div>

@@ -1,7 +1,5 @@
 import { useState } from "react";
 
-
-
 export const AdminComidas = () => {
     const [name, setName] = useState('');
     const [description, setDescription] = useState('');

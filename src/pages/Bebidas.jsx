@@ -4,7 +4,7 @@ export const Bebidas = () => {
 
     return (
         <>
-        <NavBar/>
+            <NavBar />
             <div className="seccion seccion-bebidas">
                 <h2>Bebidas</h2>
                 <div className="menu-container menu-bebidas">
@@ -14,35 +14,59 @@ export const Bebidas = () => {
                     </div>
                     <div className="menu-body">
                         <div className="menu-item">
-                            <p className="item-name">Frappé de café</p>
+                            <div className="item-name">
+                                <p className="name">Frappé de café</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Frappé de chocolate</p>
+                            <div className="item-name">
+                                <p className="name">Frappé de chocolate</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Té helado</p>
+                            <div className="item-name">
+                                <p className="name">Té helado</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Licuado de frutas</p>
+                            <div className="item-name">
+                                <p className="name">Licuado de frutas</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Limonada</p>
+                            <div className="item-name">
+                                <p className="name">Limonada</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Jugo de naranja</p>
+                            <div className="item-name">
+                                <p className="name">Jugo de naranja</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Gaseosa chica</p>
+                            <div className="item-name">
+                                <p className="name">Gaseosa chica</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                         <div className="menu-item">
-                            <p className="item-name">Agua mineral</p>
+                            <div className="item-name">
+                                <p className="name">Agua mineral</p>
+                                <p className="description">Descripción</p>
+                            </div>
                             <p className="item-price">$0000.00</p>
                         </div>
                     </div>
