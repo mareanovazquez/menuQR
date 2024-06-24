@@ -1,3 +1,5 @@
+import { faCheck, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
 
 export const AdminComidas = () => {
@@ -55,7 +57,7 @@ export const AdminComidas = () => {
                         required
                     />
 
-                    <button type="submit">Añadir</button>
+                    <button type="submit"><FontAwesomeIcon icon={faCheck} /></button>
                 </form>
 
             </div>
@@ -70,64 +72,64 @@ export const AdminComidas = () => {
                             <p className="item-name">Tostada con palta</p>
                             <p className="item-price">$0000.00</p>
                             <div className="btn-admin">
-                                <button>Editar</button>
-                                <button>Borrar</button>
+                            <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                         <div className="menu-item">
                             <p className="item-name">Tostado clásico</p>
                             <p className="item-price">$0000.00</p>
                             <div className="btn-admin">
-                                <button>Editar</button>
-                                <button>Borrar</button>
+                            <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                         <div className="menu-item">
                             <p className="item-name">Sandwich vegano</p>
                             <p className="item-price">$0000.00</p>
                             <div className="btn-admin">
-                                <button>Editar</button>
-                                <button>Borrar</button>
+                            <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                         <div className="menu-item">
                             <p className="item-name">Pan de queso</p>
                             <p className="item-price">$0000.00</p>
                             <div className="btn-admin">
-                                <button>Editar</button>
-                                <button>Borrar</button>
+                            <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                         <div className="menu-item">
                             <p className="item-name">Medialunas saladas</p>
                             <p className="item-price">$0000.00</p>
                             <div className="btn-admin">
-                                <button>Editar</button>
-                                <button>Borrar</button>
+                            <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                         <div className="menu-item">
                             <p className="item-name">Sandwich de pollo</p>
                             <p className="item-price">$0000.00</p>
                             <div className="btn-admin">
-                                <button>Editar</button>
-                                <button>Borrar</button>
+                            <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                         <div className="menu-item">
                             <p className="item-name">Huevos revueltos</p>
                             <p className="item-price">$0000.00</p>
                             <div className="btn-admin">
-                                <button>Editar</button>
-                                <button>Borrar</button>
+                            <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                         <div className="menu-item">
                             <p className="item-name">Pizza individual</p>
                             <p className="item-price">$0000.00</p>
                             <div className="btn-admin">
-                                <button>Editar</button>
-                                <button>Borrar</button>
+                            <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                             </div>
                         </div>
                     </div>
@@ -140,8 +142,8 @@ export const AdminComidas = () => {
                                 </div>
                                 <p className="item-price">${item.price}</p>
                                 <div className="btn-admin">
-                                    <button>Editar</button>
-                                    <button>Borrar</button>
+                                <button><FontAwesomeIcon icon={faEdit}/></button>
+                                <button><FontAwesomeIcon icon={faTrash} /></button>
                                 </div>
                             </div>
                         ))}
