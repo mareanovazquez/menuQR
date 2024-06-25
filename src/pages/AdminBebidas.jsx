@@ -1,4 +1,4 @@
-import { faCheck, faEdit, faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faEdit, faSave ,faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
 
@@ -172,7 +172,9 @@ export const AdminBebidas = () => {
                             </div>
                         ))}
                     </div>
-
+                </div>
+                <div className="btn-guardar-admin">
+                    <button>Guardar <FontAwesomeIcon icon={faSave} /></button>
                 </div>
             </div>
 

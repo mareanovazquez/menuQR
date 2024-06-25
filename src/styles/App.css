@@ -135,7 +135,6 @@
 .container-form-login form {
     display: flex;
     flex-direction: column;
-  
     justify-content: center;
 }
 
@@ -164,7 +163,14 @@
     justify-content: space-evenly;
     align-items: center;
 }
-
+.container-main .seccion .btn-guardar-admin {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    
+    
+}
 /* SMALL | Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
 @media (min-width: 576px) {
