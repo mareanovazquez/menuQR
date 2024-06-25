@@ -115,12 +115,28 @@
     font-style: italic;
 }
 
-.container-form {
-    border: 1px solid var(--background-color-items);
+.container-form-login {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     border-radius: 5px;
     width: 80%;
     height: 60vh;
     margin: 0 auto;
+    font-family: var(--primary-font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-form-login h2{
+    text-align: center;
+}
+
+.container-form-login form {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
 }
 
 .container-admin,

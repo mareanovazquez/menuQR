@@ -19,7 +19,7 @@ export const Login = () => {
     };
 
     return (
-        <div className="container-form">
+        <div className="container-form-login">
             <h2>Menu QR</h2>
             <form onSubmit={handleSubmit} >
                 <label htmlFor="usuarioMail">Usuario</label>
@@ -40,7 +40,7 @@ export const Login = () => {
                     name="contraseña"
                     value={contraseña}
                     onChange={(event) => setContraseña(event.target.value)}
-                    placeholder="contraseña"
+                    placeholder="Contraseña"
                     required
                 />
 
