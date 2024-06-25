@@ -143,6 +143,35 @@ button:hover {
     transition: 0.4s;
 }
 
+.footer .navBar-footer {
+    background-color: var(--primary-color);
+    height: 60px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .navBar-footer .item-footer {
+    font-family: var(--primary-font-family);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--primary-font-light-color);
+    font-size: var(--font-size-base);
+   
+
+}
+
+.footer .navBar-footer .item-footer:hover {
+    color: var(--hover-font-color);
+    transition: 0.2s;
+}
+
+
 /* SMALL | Entre 576px y 767px */
 /* Bootstrap breakpoints SM y superiores */
 @media (min-width: 576px) {

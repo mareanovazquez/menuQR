@@ -1,6 +1,7 @@
 import { faCheck, faEdit, faSave, faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from "react";
+import { Footer } from "../components/Footer/Footer";
 
 export const AdminBakery = () => {
     const [name, setName] = useState('');
@@ -176,6 +177,7 @@ export const AdminBakery = () => {
                     <button>Guardar <FontAwesomeIcon icon={faSave} /></button>
                 </div>
             </div>
-        </>
+            <Footer/>
+             </>
     );
 };
